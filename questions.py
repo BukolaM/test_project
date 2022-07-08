@@ -1,4 +1,4 @@
-details = [
+people = [
     {
         'name': 'bukola',
         'month':'january',
