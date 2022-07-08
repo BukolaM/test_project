@@ -38,10 +38,10 @@ people = [
     }
 ]
 
-## save the dictionaty of all the unique males in this list
+## save the information of all the unique males in this list
 males = []
 
-## save the dictionaty of all the unique females in this list
+## save the information of all the unique females in this list
 females = []
 
 ## add the unique country to this list
