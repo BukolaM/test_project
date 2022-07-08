@@ -25,7 +25,7 @@ details = [
         'age':30,
         'gender':'male',
         'country' :'togo',
-        'salary': 600000
+        'salary': 1000000
     },
     {
         'name':'Bola',
@@ -38,13 +38,21 @@ details = [
     }
 ]
 
-
+## save the dictionaty of all the unique males in this list
 males = []
 
+## save the dictionaty of all the unique females in this list
 females = []
 
+## add the unique country to this list
 countries = []
 
+## What is the total salay paid
 Total_salary = 0
 
+
+## Who is the hight paid persin
 highest_paid_person = {}
+
+## save the uniqu age in this list
+ages = []
