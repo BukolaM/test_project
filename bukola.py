@@ -319,6 +319,9 @@
 
  
 
+from pkg_resources import EggMetadata
+
+
 details = [
     {
     'name': 'bukola',
@@ -436,6 +439,64 @@ Total_salary = 0
 
 highest_paid_person = {}
 
+person={}
+# print(person)
+
+# person={'name':'bukola','address':'shomolu','location':'lagos'}
+# print(person['name']+' '+ person['address'])
+
+
+# person['name']='tosin'
+# person['age']=28
+# print(person)
+
+# person=['bukola','shomolu', {'tom':'eee'} ]
+# print(person)
+
+# person.append('class')
+
+# print(person)
+# print(person[2])
+
+# person[2] = {'tom':'eee'}
+
+
+# print(person[2])
+
+
+people = [
+    {
+        'name':'bukola',
+        'age': 35,
+        'salary': '500,000'
+    },
+     {
+        'name':'tosin',
+        'age': 25,
+        'salary': '600,000'
+    },
+     {
+        'name':'fuke',
+        'age': 15,
+        'salary': '700,000'
+    }
+
+]
+
+
+# print (people)
+
+# print(people[0])
+
+# people[0]['state'] = 'lagos'
+
+# print(people[0])
+action = 'ss'
+# if action == 'get_salary':
+#     for person in people:
+#         if person['name'] == 'tosin':
+#             person['state'] = 'lagos'
+    
 
 
 
@@ -443,18 +504,9 @@ highest_paid_person = {}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+people=[{'name':'bukola','add':'lagos','age':28,'gender':'fenale'}]
+for person in people:
+    print(person['name'])
 
 
 
