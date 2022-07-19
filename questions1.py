@@ -1,6 +1,8 @@
 
 
-from curses import ALL_MOUSE_EVENTS
+
+
+from re import X
 
 
 orders = [
@@ -141,6 +143,99 @@ orders = [
         'month': 'January'
     }
 ]
+
+# def all_customers(orders):
+#     customers=[]
+#     for order in orders:
+#         if order['customer'] not in customers:
+#             customers.append(order['customer'])
+#     return customers
+
+# b = all_customers(orders)
+# print(b)
+
+
+# def get_unique_customers(orders):
+#     unique_customer=[]
+#     for order in orders:
+#         if order['customer'] not in unique_customer:
+#             unique_customer.append(order['customer'])
+#     return unique_customer
+
+
+# y = get_unique_customers(orders)
+# print(y)
+
+
+
+
+
+
+
+
+
+# def number(x,y):
+#     answer=x**y
+#     if answer==0:
+#         return 1
+#     else:
+#         return answer
+
+# k = number (2,4)
+# print (k)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# def get_unique_customers(orders):
+#     unique_customer=[]
+#     for order in orders:
+#         if order['customer'] not in unique_customer:
+#             unique_customer.append(order['customer'])
+#     return unique_customer
+
+
+# y = get_unique_customers(orders)
+# print(y)
+
+
+
+
+
+
+
+
+
+
+
 
 # # print(orders)
 # months = []
@@ -368,12 +463,13 @@ orders = [
 
 
 
-##revenue per customer
-## to get unique customers
-# unique_customers=[]
-# for order in orders:
-#   if order['customer'] not in unique_customers:
-#     unique_customers.append(order['customer'])
+#revenue per customer
+# # to get unique customers
+# unique_customers=get_unique_customers(orders)
+# # for order in orders:
+# #   if order['customer'] not in unique_customers:
+# #     unique_customers.append(order['customer'])
+# # print(unique_customers)
 # print(unique_customers)
 
 # customers={}
@@ -402,18 +498,18 @@ orders = [
 # print(x_square)
 
 
-x=[2,3,4,5,-1,-9,4,-7,0]
-positive_int=[]
-negative_int=[]
+# x=[2,3,4,5,-1,-9,4,-7,0]
+# positive_int=[]
+# negative_int=[]
 
-for numbers in x:
-    print(numbers)
-    if numbers>0:
-        positive_int.append(numbers)
-    else:
-        negative_int.append(numbers)
-print(positive_int)
-print(negative_int)
+# for numbers in x:
+#     print(numbers)
+#     if numbers>0:
+#         positive_int.append(numbers)
+#     else:
+#         negative_int.append(numbers)
+# print(positive_int)
+# print(negative_int)
 
 
 
@@ -424,3 +520,48 @@ print(negative_int)
 # dic1={}
 # dic1[x]=0
 #     print(dic1)
+
+
+##Define a function which counts vowels and consonant in a word.
+
+# lists='pythonlobby'
+# vow=['a','e','i','o','u']
+# count=0
+# for list in lists:
+#     if list in vow:
+#         count=count+1
+# print(count)
+   
+
+##Make a Python function that takes x as argument and returns y. Call the function for x=2 and print the answer
+# def my_func(x):
+#     return x
+
+# y = my_func(2)
+# print(y)
+
+
+
+##Write a function called fizz_buzz that takes a number.
+##If the number is divisible by 3, it should return “Fizz”.
+##If it is divisible by 5, it should return “Buzz”.
+##If it is divisible by both 3 and 5, it should return “FizzBuzz”.
+##Otherwise, it should return the same number
+
+def fizz_buzz(x):
+    divide_by_3 = False
+    divide_by_5 = False
+    if x % 3 == 0:
+       divide_by_3 = True
+    if x % 5 == 0:
+        divide_by_5 = True
+    if divide_by_3 == True and divide_by_5 == True:
+        return 'fizzbuzz'
+    elif divide_by_3 == True:
+        return 'fizz'
+    elif divide_by_5 == True:
+        return 'buzz'
+    else:
+        return x
+y= fizz_buzz(30)
+print(y)

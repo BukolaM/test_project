@@ -201,7 +201,7 @@ males = []
 
 
 
-## What is the total salary paid per country
+# ## What is the total salary paid per country
 # countries=[]
 # for person in people:
 #     if person['country'] not in countries:
@@ -222,32 +222,31 @@ males = []
 
 
 
-# # salaries={'nigeria':0,'ghana':0,'togo':0,'kenya':0}
 # print(salaries)
 
 
-genders=[]
-for person in people:
-    if person['gender'] not in genders:
-        genders.append(person['gender'])
+# genders=[]
+# for person in people:
+#     if person['gender'] not in genders:
+#         genders.append(person['gender'])
     
 # print(genders)
 
 
-gender_count = {}
+# gender_count = {}
 
-genders = ['male', 'female', 'bisexuall']
+# genders = ['male', 'female', 'bisexuall']
 
-for x in genders:
-    gender_count[x] = 0
+# for x in genders:
+#     gender_count[x] = 0
 
-print(gender_count)
+# print(gender_count)
 
-for person in people:
-    ys = person['gender']
-    gender_count[ys] = gender_count[ys]  + 1
+# for person in people:
+#     ys = person['gender']
+#     gender_count[ys] = gender_count[ys]  + 1
 
-print(gender_count)
+# print(gender_count)
 
     
 
@@ -265,23 +264,41 @@ print(gender_count)
 
 
 
+# dic1={1:10, 2:20}
+# dic2={3:30, 4:40}
+# dic3={5:50,6:60}
+# d={}
+# for dict4 in (dic1,dic2,dic3):
+#     d.update(dict4)
+# print(d)
+##------------------------------------------------------------------------
+# colours=["Black", "Red", "Maroon", "Yellow"]
+# colour_palate= ["#000000", "#FF0000", "#800000", "#FFFF00"]
+
+# colours_and_their_palate = {}
+# index_of_each_item=0
+
+# for color in colours:
+#     all_colors=colours[index_of_each_item]
+#     all_color_palate_details= colour_palate[index_of_each_item]
+#     index_of_each_item=index_of_each_item + 1
+#     colours_and_their_palate[all_colors]=all_color_palate_details
+
+# print(colours_and_their_palate)
+##----------------------------------------------------------------------------
 
 
+menu=['kneckered spam','pip pip spam', 'squidy spam', 'squishy spam']
+list=[0.5,1.50,2.50,3.50]
+menu_list={}
+index=0
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+for m in menu:
+    menu_item=m
+    list_item=list[index]
+    index=index+1
+    menu_list[menu_item]=list_item
+print(menu_list)
 
 
 

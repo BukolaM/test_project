@@ -319,7 +319,6 @@
 
  
 
-from pkg_resources import EggMetadata
 
 
 details = [
@@ -429,18 +428,18 @@ details = [
 ]
 
 
-males = []
+# males = []
 
-females = []
+# females = []
 
-countries = []
+# countries = []
 
-Total_salary = 0
+# Total_salary = 0
 
-highest_paid_person = {}
+# highest_paid_person = {}
 
-person={}
-# print(person)
+# person={}
+# # print(person)
 
 # person={'name':'bukola','address':'shomolu','location':'lagos'}
 # print(person['name']+' '+ person['address'])
@@ -464,24 +463,24 @@ person={}
 # print(person[2])
 
 
-people = [
-    {
-        'name':'bukola',
-        'age': 35,
-        'salary': '500,000'
-    },
-     {
-        'name':'tosin',
-        'age': 25,
-        'salary': '600,000'
-    },
-     {
-        'name':'fuke',
-        'age': 15,
-        'salary': '700,000'
-    }
+# people = [
+#     {
+#         'name':'bukola',
+#         'age': 35,
+#         'salary': '500,000'
+#     },
+#      {
+#         'name':'tosin',
+#         'age': 25,
+#         'salary': '600,000'
+#     },
+#      {
+#         'name':'fuke',
+#         'age': 15,
+#         'salary': '700,000'
+#     }
 
-]
+# ]
 
 
 # print (people)
@@ -491,7 +490,7 @@ people = [
 # people[0]['state'] = 'lagos'
 
 # print(people[0])
-action = 'ss'
+# action = 'ss'
 # if action == 'get_salary':
 #     for person in people:
 #         if person['name'] == 'tosin':
@@ -504,13 +503,140 @@ action = 'ss'
 
 
 
-people=[{'name':'bukola','add':'lagos','age':28,'gender':'fenale'}]
-for person in people:
-    print(person['name'])
+# people=[{'name':'bukola','add':'lagos','age':28,'gender':'fenale'}]
+# for person in people:
+#     print(person['name'])
+
+
+
+ ##Define a function that accepts 2 values and return its sum, subtraction and multiplication
+# def my_func(a,b):
+   
+#     print(a+b)
+#     print (a-b)
+#     print(a*b)
+# my_func(7,5)
+
+
+ ## Define a function in python that accepts 3 values and returns the maximum of three numbers
+# def note(a,b,c):
+#     greater_than=[]
+#     if a>b and b>c:
+#         print ('good')
+#     elif b>c and b>a:
+#         print('nice')
+
+#     else:
+#         print ('okay')
+# note(0,0,18)
+
+##Define a function that accepts a number and returns whether the number is even or odd
+# def my_funct(numbers):
+#     even_num=[]
+#     odd_num=[]
+#     for number in numbers:
+#         if number%2==0:
+#             even_num.append(number)
+#         else:
+#             odd_num.append(number)
+#     return {'even numbers': even_num, 'odd numbers':odd_num}
+# y= my_funct([2,3,4,5,6,7,8,9,10])
+# print(y)
+
+#---------------------------------------------
+ numbers=[10,20,30,40,50,60,70,80]
+# numbers_in_50s=[]
+# nos_above_50s=[]
+
+# for action in numbers:
+#     if action <=50:
+#         numbers_in_50s.append(action)
+#     else:
+#         nos_above_50s.append(action)
+# print(numbers_in_50s)
+# print(nos_above_50s)
+
+
+
+
+# numbers=[10,20,30,60,30,20,50,40,90,40]
+# duplicate_num=[]
+# y=[]
+# for action in numbers:
+#     print(action)
+#     if action not in duplicate_num:
+#         duplicate_num.append(action)
+#     else:
+#         y.append(action)
+# print(duplicate_num)
+# print(y)
+
+
+
+numbers = ['Ten', 'Twenty', 'Thirty']
+values = [10, 20, 30]
+
+key_values={}
+figure =0
+for number in numbers:
+    key = numbers[figure]
+    value = values[figure]
+    key_values[key] = value*2
+   
+    figure=figure+1
+
+print(key_values)
+
+# fruit_dictionary = dict(zip(keyna, values))
+
+# print(fruit_dictionary)
+  
+
+
+x=['bukola','anita','anu']
+y=[20,40,60]
+# dict[key]=value
+
+dicti={}
+ex=0
+for number in x:
+    key=x[ex]
+    value=y[ex]
+    ex=ex+1
+    dicti[key]=value
+print(dicti)
+
+
+
+##----------------------------------------------------------------------
+
+# dict[names]=numbers------------------------------------------------------------------
+names=['tinu','ranti','ayo']
+numbers=[20,40,60]
+dict={}
+index=0
+
+for name in names:
+    original_name=name[index]
+    original_numbers=numbers[index]
+    index=index+1
+    dict[original_name]=original_numbers
+
+print(dict)
+##----------------------------------------------------------------------------------------
 
 
 
 
 
+ ##Define a function which counts vowels and consonant in a word
+def my_func(spellings):
+    count_of_vowel=0
+    count_of_consonant=0
+    for spelling in spellings:
+        if ['a','e','i','0','u'] in spelling
 
 
+
+
+    def('pythonlobby')
