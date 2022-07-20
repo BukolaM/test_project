@@ -151,33 +151,56 @@
 # {'food':'breakfast','time':'8am','price':5000, 'restaurant':'gilab', 'tranferred':'no'}]
 
 
-a = 0
-a = a + 1
-a = a + 5
-b = 5
+# a = 0
+# a = a + 1
+# a = a + 5
+# b = 5
 
-a = a + b
+# a = a + b
+
+from mimetypes import init
+
 
 d = {}
 
-g = ['a','b','c','d','e','f','g','h']
-# k = ['i','j','k','j','m','n','o','p']
+# g = ['a','b','c','d','e','f','g','h']
+# # k = ['i','j','k','j','m','n','o','p']
 
-for key in g:
-    d[key] = 2
+# for key in g:
+#     d[key] = 2
 
-print(d)
+# print(d)
 
-for item in g:
+# for item in g:
    
-    initial = d[item] 
-    value = 5
-    d[item] = initial + value
+#     initial = d[item] 
+#     value = 5
+#     d[item] = initial + value
 
 
-print(d)
+# print(d)
 
+data = [
+    {'y':'tosin', 'salary': 7000}, 
+    {'y':'bukola', 'salary': 4000},
+    {'y':'funke', 'salary': 3000},
+    {'y':'tosin', 'salary': 2000}, 
+    {'y':'bukola', 'salary': 7000},
+    {'y':'tosin', 'salary': 6000}, 
+    {'y':'bukola', 'salary': 8000},
+    {'y':'tosin', 'salary': 3000}, 
+    {'y':'bukola', 'salary': 1000},
+]
 
+result = {'tosin': 0, 'bukola': 0, 'funke': 0 }
 
+for item in data:
+    key = item['y']
 
- 
+    initial = result[key]
+    value = initial + 1
+
+    result[key] = value
+
+print(result)
+
