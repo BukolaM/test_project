@@ -29,7 +29,6 @@ def get_csv(file_path):
         return result
 
 def get_unique_cars(cars):
-
     result=[]
     for unique in cars:
         if unique['make'] not in result:
@@ -44,59 +43,47 @@ def prepare (cars):
     return prepare_list
 
     
-def car_revenue(cars):  
-    prepare_list={}
-    unique_car = get_unique_cars(cars) 
-    print (unique_car)
+def car_revenue(d): 
 
-    prepare_list = prepare(unique_car)
+    e = get_unique_cars(d) 
 
-    for car in cars:
-        key=car['make']
-        prepare_list[key] = prepare_list[key] + int(car['price'])
+    print(e)
+
+    prepare_list = prepare(e)
+
     return prepare_list
 
 
+a = get_csv('Data/New_Data.csv')
+# print(a)
 
 
+y = car_revenue(a)
+# print(y)
 
 
-def back():
-    return 'back'
-def jump():
-    return 'jump'
-def come():
-    a= jump()
-    
-    b = back()
-    return a + b
- 
-a=come ()
-print(a)
+def square(e):
+    c = e * e
+    return c
 
+def sum_square(a, b):
+    d = square(a)
+    c = a + b + d
+    return c
 
+def minus_square(a, b):
+    d = square(a)
+    c = a + b - d
+    return c
 
+# x = sum_square(2, 1)
+# print(x)
 
+# x = minus_square(2, 1)
+# print(x)
 
-
-all_cars = get_csv('Data/New_Data.csv')
-# # a= get_unique_cars(all_cars)
-# # print(a)
-# y= car_revenue(all_cars)
-
-
-unique_car = get_unique_cars(all_cars) 
-print (unique_car)
-
-prepare_list={}
-for car in unique_car:
-    key=car
-    prepare_list[key]=0
-
-for car in all_cars:
-    key=car['make']
-    prepare_list[key] = prepare_list[key] + int(car['price'])
-print (prepare_list)
+# c = square(5)
+# print(c)
 
 
 
