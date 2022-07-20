@@ -179,13 +179,13 @@ for order in orders:
 # #     unique_customers_revenue[m]=0
 
 
-# # for order in orders:
-# #     key=order['customer']
-# #     print(key)
-# #     value=unique_customers_revenue[key] + order['amount']
-# #     unique_customers_revenue[key]=value
+for order in orders:
+    key=order['customer']
+    print(key)
+    value=unique_customers_revenue[key] + order['amount']
+    unique_customers_revenue[key]=value
 
-# #     print(unique_customers_revenue[key])
+    print(unique_customers_revenue[key])
     
 # # print(unique_customers_revenue)
 # #---------------------------------------------------------------------------
