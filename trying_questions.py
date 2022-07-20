@@ -222,11 +222,7 @@ for order in orders:
 # #     return unique_menu
 
 
-# # y = all_menu[{'food':'breakfast','time':'8am','price':5000, 'restaurant':'gilab', 'tranferred':'no'},
-# # {'food':'lunch','time':'2pm','price':5000, 'restaurant':'the place', 'tranferred':'no'},
-# # {'food':'dinner','time':'9pm','price':3000, 'restaurant':'roadside', 'tranferred':'yes'},
-# # {'food':'breakfast','time':'10am','price':9000, 'restaurant':'dominoes', 'tranferred':'yes'},
-# # {'food':'lunch','time':'3pm','price':8000, 'restaurant':'the place', 'tranferred':'no'}]
+
 
 # # print(y)
 # ##using a function to get revenue--------------------------------------------------------------------------------------------

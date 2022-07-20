@@ -97,62 +97,102 @@
 
     
 
-def get_csv(file):
+# def get_csv(file):
 
-    with open (file) as new_data:
-        my_data= new_data.read()
+#     with open (file) as new_data:
+#         my_data= new_data.read()
         
-        all_data=my_data.split('\n')
+#         all_data=my_data.split('\n')
     
 
-        my_header=all_data[0]
-        all_header= my_header.split(',')
+#         my_header=all_data[0]
+#         all_header= my_header.split(',')
     
-        del all_data[0]
+#         del all_data[0]
 
 
-        result=[]  
-        for data in all_data:
-            all_columns=data.split(',')
+#         result=[]  
+#         for data in all_data:
+#             all_columns=data.split(',')
 
-            all_data_and_keys={}
-            index=0
+#             all_data_and_keys={}
+#             index=0
                     
-            for headers in all_header:
-                key= headers
-                value= all_columns[index]
-                index=index + 1
-                all_data_and_keys[key]=value
+#             for headers in all_header:
+#                 key= headers
+#                 value= all_columns[index]
+#                 index=index + 1
+#                 all_data_and_keys[key]=value
             
-            result.append(all_data_and_keys)
+#             result.append(all_data_and_keys)
             
             
+#         return result
+
+
+
+
+# def get_unique_cars(car):
+#     unique_cars=[]
+#     for unique in car:
+#         if unique['make'] not in unique_cars:
+#             unique_cars.append(unique['make'])
+#     return unique_cars
+
+# cars=get_csv('/Users/bukola/Desktop/my_project/Data/New_Data.csv')
+
+
+    
+
+
+# x= get_unique_cars(cars)
+# print (x)
+
+    
+       
+       
+
+def my_data(file_name):
+    with open(file_name) as new_data:
+        all_data=new_data.read()
+        all_data=all_data.split('\n')
+        
+        headers=all_data[0]
+        all_headers=headers.split(',')
+
+        del all_data[0]
+        result=[]
+        for rows in all_data:
+            row= rows.split(',')
+           
+            key_list={}
+            index=0
+            for keys in all_headers:
+               key= keys
+               value =row[index]
+               key_list[key]=value
+               index=index+1
+            result.append(key_list)
+
         return result
 
+           
 
 
 
-def get_unique_cars(car):
-    unique_cars=[]
-    for unique in car:
-        if unique['make'] not in unique_cars:
-            unique_cars.append(unique['make'])
-    return unique_cars
 
-cars=get_csv('/Users/bukola/Desktop/my_project/Data/New_Data.csv')
+y= my_data('/Users/bukola/Desktop/my_project/Data/New_Data.csv')
+print(y)
 
 
-    
 
 
-x= get_unique_cars(cars)
-print (x)
 
-    
-       
-       
-       
-       
+
+
+
+
+
        
      
     
