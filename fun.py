@@ -160,14 +160,23 @@ a = a + b
 
 d = {}
 
-g=['a','b','c','d','e','f','g','h']
+g = ['a','b','c','d','e','f','g','h']
+# k = ['i','j','k','j','m','n','o','p']
 
-# d={'a':0,'b':0}
-for all in g:
-   d[all]=0
+for key in g:
+    d[key] = 2
 
-for a in g:
-    d[a]=
+print(d)
+
+for item in g:
+   
+    initial = d[item] 
+    value = 5
+    d[item] = initial + value
+
+
+print(d)
+
 
 
 
